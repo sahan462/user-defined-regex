@@ -59,7 +59,7 @@ def search_traverse(txt, pat, line_number, file_):
                 j += 1
 
         if j == M:
-            file_.write("Found "+pat+" pattern at line:" + str(line_number) + " index:" + str(i - j - repeat_len) + "\n")
+            file_.write("Found '"+pat+"' pattern at line:" + str(line_number) + " index:" + str(i - j - repeat_len) + "\n")
             repeat_len = 0
             j = piTable[j - 1]
             if pat[j - 1] == '^':
@@ -98,13 +98,11 @@ def getPItable(pat, M, piTable):
 def process_and_save(pattern_filename, text_filename, output_filename):
     with open(f'input/{pattern_filename}', 'r') as pattern_file: 
         patterns = pattern_file.read().splitlines()
-    with open(output_filename, 'a') as output_file:
+    with open(f'output/{output_filename}', 'a') as output_file:
         with open(f'input/{text_filename}', 'r') as text_file:
             lines = text_file.readlines()
             for j in range(0, len(patterns)):
-                print(patterns[j])
                 for i, line in enumerate(lines):
-                    print(line,patterns[j])
                     search_traverse(line.strip(), patterns[j], i + 1, output_file)
 
 # Main function
