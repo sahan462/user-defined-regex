@@ -98,7 +98,8 @@ def getPItable(pat, M, piTable):
 def process_and_save(pattern_filename, text_filename, output_filename):
     with open(f'input/{pattern_filename}', 'r') as pattern_file: 
         patterns = pattern_file.read().splitlines()
-    with open(f'output/{output_filename}', 'a') as output_file:
+
+    with open(f'output/{output_filename}', 'w') as output_file:
         with open(f'input/{text_filename}', 'r') as text_file:
             lines = text_file.readlines()
             for j in range(0, len(patterns)):

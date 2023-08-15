@@ -1,0 +1,11 @@
+Found 'U.S.' pattern at line:1 index:0
+Found 'U.S.' pattern at line:2 index:12
+Found 'U.S.' pattern at line:6 index:0
+Found '^She enjoys' pattern at line:4 index:0
+Found 'UCS.' pattern at line:1 index:0
+Found 'UCS.' pattern at line:2 index:12
+Found 'UCS.' pattern at line:6 index:0
+Found 'Student.' pattern at line:2 index:0
+Found 'intel+igence' pattern at line:6 index:53
+Found 'engine+ri.g' pattern at line:6 index:78
+Found 'after.o+.' pattern at line:5 index:50

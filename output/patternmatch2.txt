@@ -1,0 +1,11 @@
+Found '^The' pattern at line:1 index:0
+Found '^The' pattern at line:2 index:0
+Found '^The' pattern at line:3 index:0
+Found '^The' pattern at line:5 index:0
+Found '^The' pattern at line:7 index:0
+Found '^The' pattern at line:10 index:0
+Found '^A ' pattern at line:4 index:0
+Found '^A ' pattern at line:9 index:0
+Found '^.hil.ren' pattern at line:8 index:0
+Found '^Star.' pattern at line:6 index:0
+Found '^Tre+' pattern at line:11 index:0
